@@ -1,0 +1,14 @@
+service: canondefense-play
+
+provider:
+  name: aws
+  region: eu-south-2
+  stage: prod
+
+plugins:
+  - serverless-lift
+
+constructs:
+  play:
+    type: static-website
+    path: play
